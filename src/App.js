@@ -8,11 +8,11 @@ class App extends Component {
         data.movies.map(
             show => (
                 <div className="cont">
-                    <div id="header">
+                    <div className="header">
                         <h1>{show.name}</h1>
                     </div>
                     <img src={`/public/img/posters/${show.img}`} alt={show.name} height="40" width="70" />
-                    <p>{show.year}</p>
+                    <p>Year: {show.year}</p>
                 </div>
             )
         )
