@@ -1,0 +1,21 @@
+{
+  "movies":
+    [
+      {
+        "name":"John Wick",
+        "year":2017,
+        "img":"john_wick_ver7.jpg"
+      },
+      {
+        "name":"Avengers",
+        "year":2015,
+        "img":"Avengers_Infinity_War_Poster_Marvel_spoileroficialHD.png"
+      },
+      {
+        "name":"Blade Runners 2048",
+        "year":2017,
+        "img":"runner-gosling-chara-xl.jpg"
+      }
+    ]
+
+}

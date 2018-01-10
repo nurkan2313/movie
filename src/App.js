@@ -1,20 +1,22 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+const data = require('./data.json');
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
+        data.movies.map(
+            show => (
+                <div className="cont">
+                    <div id="header">
+                        <h1>{show.name}</h1>
+                    </div>
+                    <img src={`/public/img/posters/${show.img}`} alt={show.name} height="40" width="70" />
+                    <p>{show.year}</p>
+                </div>
+            )
+        )
+    )
   }
 }
 
